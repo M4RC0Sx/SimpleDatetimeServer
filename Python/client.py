@@ -14,5 +14,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.send(b'Hi server, I am connecting.')  # Send a message to the server.
 
     server_data = s.recv(1024)  # Get current datetime data sent by server.
-
-print('[SimpleDatetimeServer/INFO] Received current datetime: {}.'.format(server_data.decode()))
+    print('[SimpleDatetimeServer/INFO] Received current datetime: {}.'.format(server_data.decode()))
